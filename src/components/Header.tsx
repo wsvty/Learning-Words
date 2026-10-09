@@ -1,5 +1,6 @@
 import React from 'react';
 import { StudyMode } from '../types.ts';
+import { PWAInstallButton } from './PWAInstallButton.tsx';
 
 interface HeaderProps {
   currentMode: StudyMode;
@@ -81,13 +82,15 @@ export const Header: React.FC<HeaderProps> = ({
           )}
         </nav>
 
-        {/* Zone 3: 1 primary action */}
-        <div className="flex items-center gap-3 shrink-0">
+        {/* Zone 3: Actions */}
+        <div className="flex items-center gap-2.5 shrink-0">
+          <PWAInstallButton />
+
           {hasWords ? (
             <button
               type="button"
               onClick={onResetSession}
-              className="px-4 py-2 text-xs font-semibold text-neutral-300 hover:text-white bg-[#18181b] hover:bg-[#27272a] border border-[#27272a] rounded-md transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+              className="px-3.5 py-1.5 text-xs font-semibold text-neutral-300 hover:text-white bg-[#18181b] hover:bg-[#27272a] border border-[#27272a] rounded-md transition-colors whitespace-nowrap shrink-0 cursor-pointer"
             >
               Reset Progress
             </button>

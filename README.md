@@ -35,14 +35,21 @@ A dark-mode vocabulary memorization web app designed to run locally on your lapt
    ```
    Open `http://localhost:3000` in your browser.
 
-## Uploading to GitHub / GitHub Pages
+## Running as a Desktop App / .EXE on your PC
 
-This app is built purely with standard React, Tailwind CSS, and HTML/JS with no server or database requirement.
+### Method 1: Instant 1-Click Desktop App (Easiest & Fastest — No downloads required)
+The app is now an installable Progressive Web App (PWA):
+1. Open your published GitHub Pages link (or `http://localhost:3000`) in **Google Chrome** or **Microsoft Edge**.
+2. Click the **"Install PC App"** button in the top navigation bar (or click the install icon in your browser address bar).
+3. Click **Install**.
+4. Windows will create a native application shortcut on your **Desktop** and **Start Menu**. It opens in its own window as a real desktop program with full offline capabilities!
 
-1. Build static production assets:
-   ```bash
-   npm run build
-   ```
-   This generates the pure HTML, CSS, and JS bundle in the `dist` folder.
+---
 
-2. Push this repository to your GitHub account and enable **GitHub Pages** from `dist` (or via GitHub Actions).
+### Method 2: Download a Standalone `.exe` via GitHub Actions
+We configured an automated Windows build workflow (`.github/workflows/build-exe.yml`):
+1. In your GitHub repository, click the **Actions** tab at the top.
+2. Select **"Build Windows EXE"** on the left menu.
+3. Click the **Run workflow** button on the right.
+4. When it finishes (~2 minutes), click on the completed run and download **`LexiLoop-Windows-EXE`**.
+5. Inside the ZIP file, you will find `LexiLoop Setup.exe` and `LexiLoop.exe` ready to run on any Windows PC!

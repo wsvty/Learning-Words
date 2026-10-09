@@ -2,5 +2,7 @@
   "name": "LexiLoop - Minimalist Vocabulary Flashcard & Retention Trainer",
   "description": "A distraction-free, dark-mode vocabulary memorization app with iterative mastery loops and a 95% retention testing threshold.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
